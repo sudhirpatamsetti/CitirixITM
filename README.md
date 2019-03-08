@@ -6,7 +6,7 @@ Connect Datadog to Citrix ITM Openmix to:
 
 * Trigger immediate traffic changes based on Datadog alerts
 
-![DecisionReport](https://raw.githubusercontent.com/DataDog/IntegrationTemplate/master/integration/images/DecisionReport.png)
+![DecisionReport](https://raw.githubusercontent.com/sudhirpatamsetti/CitrixITM/master/images/DecisionReport.png)
 
 
 ## Setup
