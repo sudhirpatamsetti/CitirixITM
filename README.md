@@ -1,7 +1,5 @@
 ## Overview
 
-Manage Citrix ITM Openmix traffic with Datadog monitors and alerts.
-
 Connect Datadog to Citrix ITM Openmix to:
 
 * Manage traffic using the Datadog monitors to measure the health of routing endpoints
