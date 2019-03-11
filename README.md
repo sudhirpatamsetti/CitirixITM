@@ -73,9 +73,10 @@ When you get to the service-specific configuration dialog box, enter the followi
 * Platform: The Platform that is associated with the data feed
 * API Key: Available in the Datadog portal
 * Application Key: Available in the Datadog portal
- **Note**: API and Application keys are in Datadog. Both keys are required to setup a Datadog Fusion feed.  To view the keys log into Datadog and navigate to: [Integrations -> APIs] (https://app.datadoghq.com/account/settings#api)
+  * API and Application keys are in Datadog. Both keys are required to setup a Datadog Fusion feed.  To view the keys log into  Datadog and navigate to: [Integrations -> APIs](https://app.datadoghq.com/account/settings#api)
 * Monitor ID:  Monitor ID is the specific monitor you want to poll. 
- **Note**: To find the monitor_id in Datadog, navigate to: [Monitors -> manage monitors] (https://app.datadoghq.com/monitors/manage). Search for the monitor you'd like to poll. monitor_id is in the browser address bar: https://app.datadoghq.com/monitors#**2511486**?group=all&live=4h
+  * To find the monitor_id in Datadog, navigate to: [Monitors -> manage monitors](https://app.datadoghq.com/monitors/manage)
+  * Search for the monitor you'd like to poll. monitor_id is in the browser address bar:   https://app.datadoghq.com/monitors#**2511486**?group=all&live=4h
 
 ![Datafeed](https://raw.githubusercontent.com/sudhirpatamsetti/CitrixITM/master/images/Datafeed.png)
 
