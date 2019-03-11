@@ -1,23 +1,22 @@
 ## Overview
 
 Connect Datadog to Citrix ITM Openmix to:
-
 * Manage traffic using the Datadog monitors to measure the health of routing endpoints
 * Trigger immediate traffic changes based on Datadog alerts
 
 ![DecisionReport](https://raw.githubusercontent.com/sudhirpatamsetti/CitrixITM/master/images/DecisionReport.png)
 
-
 ## Setup
 
 ### Configuration
 
-The Datadog Fusion integration consists of two parts: 
+#### Description
 
+The Datadog Fusion integration consists of two parts: 
 * A Fusion feed to poll the Datadog monitor of interest, and 
 * A Webhook to accept Datadog alerts
 
-Data Feed Format:
+#### Data Feed Format
 ```
   {
     "date": "1514928998000",
@@ -39,11 +38,11 @@ When the monitor is triggering an alert
     "title": "[Triggered on {host:...,url:...}] Fusion Integration Alert"}
   }
   ```
-Note: The word “Recovered” in the title indicates the that the status is OK, and the word “Triggered” indicates that the monitor is giving out an alert.
+**Note**: The word “Recovered” in the title indicates the that the status is OK, and the word “Triggered” indicates that the monitor is giving out an alert
 
-Reconciliation Steps:
+#### Reconciliation Steps
 				
-Prerequisites: Datadog monitor of interest is already set up.
+Prerequisites: Datadog monitor of interest is already set up
 					
 * Go to the Datadog portal			
 * Go to Monitors on the left navigation panel				
@@ -52,21 +51,21 @@ Prerequisites: Datadog monitor of interest is already set up.
 
 ![Fusionintegrationalert](https://raw.githubusercontent.com/sudhirpatamsetti/CitrixITM/master/images/Fusionintegrationalert.png)
 
-Server Configuration:
+#### Server Configuration
 	
-Configure Webhook
+**Configure Webhook**
 		
 Navigate to Integrations and click on the Webhooks tile. This page (https://app.datadoghq.com/account/settings#integrations/webhooks) walks you through the Datadog Webhook integration.
 At the bottom of the Webhooks dialog, Add a new Webhook.  Each row is a new Webhook that can be used to alert a different Fusion feed.  There are two required fields:
 
-* Name: Can be any arbitrary name.	
-* URL: This is the URL from the Portal Fusion Data Feed when you configured Datadog. Leave Custom Payload and Headers blank i.e. make sure the check boxes are not clicked.
+* Name: Can be any arbitrary name	
+* URL: This is the URL from the Portal Fusion Data Feed when you configured Datadog. Leave Custom Payload and Headers blank i.e. make sure the check boxes are not clicked
 
 A single Webhook looks like this:
 
 ![Webhook](https://raw.githubusercontent.com/sudhirpatamsetti/CitrixITM/master/images/Webhook.png)
 
-Setup in Fusion:
+#### Setup in Fusion
 				
 You can access Fusion Data Feeds from the left navigation pane, under Openmix. For initial steps please refer to the Fusion user guide.
 When you get to the service-specific configuration dialog box, enter the following:	
@@ -77,7 +76,7 @@ When you get to the service-specific configuration dialog box, enter the followi
 * API Key: Available in the Datadog portal.
 * Application Key: Available in the Datadog portal.
 
-Note: API and Application keys are in Datadog. Both keys are required to setup a Datadog Fusion feed.  To view the keys log into Datadog and navigate to:
+**Note**: API and Application keys are in Datadog. Both keys are required to setup a Datadog Fusion feed.  To view the keys log into Datadog and navigate to:
 								
 Integrations -> APIs https://app.datadoghq.com/account/settings#api
 
@@ -85,11 +84,11 @@ Monitor ID:  Monitor ID is the specific monitor you want to poll.
 							
 To find the monitor_id in Datadog, navigate to:
 
-                	            Monitors -> manage monitors https://app.datadoghq.com/monitors/manage
+                	        Monitors -> manage monitors https://app.datadoghq.com/monitors/manage
 
 Search for the monitor you'd like to poll monitor_id is in the browser address bar:
 
-								https://app.datadoghq.com/monitors#2511486?group=all&live=4h
+				https://app.datadoghq.com/monitors#2511486?group=all&live=4h
 	
 Once the Fusion feed is complete, copy the URL provided. This URL will be used to configure the Webhook.
 
