@@ -68,26 +68,26 @@ A single Webhook looks like this:
 You can access Fusion Data Feeds from the left navigation pane, under Openmix. For initial steps please refer to the Fusion user guide.
 When you get to the service-specific configuration dialog box, enter the following:	
 
-* Name: The name given to the data feed. This will default to "Service - Platform Name" if not specified.
-* Run Every: The frequency with which the data feed is updated from the service.	
-* Platform: The Platform that is associated with the data feed.
-* API Key: Available in the Datadog portal.
-* Application Key: Available in the Datadog portal.
+* Name: The name given to the data feed. This will default to "Service - Platform Name" if not specified
+* Run Every: The frequency with which the data feed is updated from the service	
+* Platform: The Platform that is associated with the data feed
+* API Key: Available in the Datadog portal
+* Application Key: Available in the Datadog portal
 **Note**: API and Application keys are in Datadog. Both keys are required to setup a Datadog Fusion feed.  To view the keys log into Datadog and navigate to:
 				 Integrations -> APIs https://app.datadoghq.com/account/settings#api
 * Monitor ID:  Monitor ID is the specific monitor you want to poll. 
 To find the monitor_id in Datadog, navigate to:
                                  Monitors -> manage monitors https://app.datadoghq.com/monitors/manage
-Search for the monitor you'd like to poll monitor_id is in the browser address bar:
+.Search for the monitor you'd like to poll. monitor_id is in the browser address bar:
 				 https://app.datadoghq.com/monitors#2511486?group=all&live=4h
 
 ![Datafeed](https://raw.githubusercontent.com/sudhirpatamsetti/CitrixITM/master/images/Datafeed.png)
 
-Click Next to complete setting up the Fusion feed. Once the Fusion feed set up is complete, copy the URL provided. This URL will be used to configure the Webhook.
+Click Next to complete setting up the Fusion feed. Once the Fusion feed set up is complete, copy the URL provided. This URL will be used to configure the Webhook
 
 ![Datafeed1](https://raw.githubusercontent.com/sudhirpatamsetti/CitrixITM/master/images/Datafeed1.png)
 
-Once the Fusion Datadog installation is complete, it will be listed on the Fusion data feeds home page with a green status and monitoring metrics in the log history.
+Once the Fusion Datadog installation is complete, it will be listed on the Fusion data feeds home page with a green status and monitoring metrics in the log history
 
 To edit a Fusion data feed click on the data feed in the list and then click the Edit button. Once you have changed the configuration, click Save. This will bring you back to the data feed list with your changes saved and applied to the data feed.
 
