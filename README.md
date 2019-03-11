@@ -57,7 +57,7 @@ Find the alert that you set up and click on it.
 					
 Check if the status is OK and if matches the status you see in Fusion.
 
-![Fusionintegrationalert](https://raw.githubusercontent.com/DataDog/IntegrationTemplate/master/integration/images/Fusionintegrationalert.png)
+![Fusionintegrationalert](https://raw.githubusercontent.com/sudhirpatamsetti/CitrixITM/master/images/Fusionintegrationalert.png)
 
 Server Configuration:
 	
