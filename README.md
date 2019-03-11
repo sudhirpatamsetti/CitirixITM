@@ -73,7 +73,7 @@ URL: This is the URL from the Portal Fusion Data Feed when you configured Datado
 
 A single Webhook looks like this:
 
-![Webhook](https://raw.githubusercontent.com/DataDog/IntegrationTemplate/master/integration/images/Webhook.png)
+![Webhook](https://raw.githubusercontent.com/sudhirpatamsetti/CitrixITM/master/images/Webhook.png)
 
 Setup in Fusion:
 				
@@ -105,11 +105,11 @@ Search for the monitor you'd like to poll monitor_id is in the browser address b
 	
 Once the Fusion feed is complete, copy the URL provided. This URL will be used to configure the Webhook.
 
-![Datafeed](https://raw.githubusercontent.com/DataDog/IntegrationTemplate/master/integration/images/Datafeed.png)
+![Datafeed](https://raw.githubusercontent.com/sudhirpatamsetti/CitrixITM/master/images/Datafeed.png)
 
 Click Next to complete setting up the Fusion feed Once the Fusion feed set up is complete, copy the URL provided. This URL will be used to configure the Webhook.
 
-![Datafeed1](https://raw.githubusercontent.com/DataDog/IntegrationTemplate/master/integration/images/Datafeed1.png)
+![Datafeed1](https://raw.githubusercontent.com/sudhirpatamsetti/CitrixITM/master/images/Datafeed1.png)
 
 Once the Fusion Datadog installation is complete, it will be listed on the Fusion data feeds home page with a green status and monitoring metrics in the log history.
 
