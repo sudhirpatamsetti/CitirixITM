@@ -53,7 +53,7 @@ Prerequisites: Datadog monitor of interest is already set up
 	
 **Configure Webhook**
 		
-Navigate to Integrations and click on the Webhooks tile. This page (https://app.datadoghq.com/account/settings#integrations/webhooks) walks you through the Datadog Webhook integration.
+Navigate to Integrations and click on the Webhooks tile. [This page ](https://app.datadoghq.com/account/settings#integrations/webhooks) walks you through the Datadog Webhook integration.
 At the bottom of the Webhooks dialog, Add a new Webhook.  Each row is a new Webhook that can be used to alert a different Fusion feed.  There are two required fields:
 
 * Name: Can be any arbitrary name	
