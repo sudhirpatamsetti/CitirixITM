@@ -86,7 +86,7 @@ Click Next to complete setting up the Fusion feed. Once the Fusion feed set up i
 
 Once the Fusion Datadog installation is complete, it will be listed on the Fusion data feeds home page with a green status and monitoring metrics in the log history
 
-To edit a Fusion data feed click on the data feed in the list and then click the Edit button. Once you have changed the configuration, click Save. This will bring you back to the data feed list with your changes saved and applied to the data feed.
+To edit a Fusion data feed, click on the data feed in the list and then click the Edit button. Once you have changed the configuration, click Save. This will bring you back to the data feed list with your changes saved and applied to the data feed.
 
 ## Data Collected
 
