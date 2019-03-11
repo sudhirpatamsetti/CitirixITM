@@ -8,15 +8,13 @@ Connect Datadog to Citrix ITM Openmix to:
 
 ## Setup
 
-### Configuration
-
-#### Description
+### Description
 
 The Datadog Fusion integration consists of two parts: 
 * A Fusion feed to poll the Datadog monitor of interest, and 
 * A Webhook to accept Datadog alerts
 
-#### Data Feed Format
+### Data Feed Format
 ```
   {
     "date": "1514928998000",
@@ -40,7 +38,7 @@ When the monitor is triggering an alert
   ```
 **Note**: The word “Recovered” in the title indicates the that the status is OK, and the word “Triggered” indicates that the monitor is giving out an alert
 
-#### Reconciliation Steps
+### Reconciliation Steps
 				
 Prerequisites: Datadog monitor of interest is already set up
 					
@@ -51,7 +49,7 @@ Prerequisites: Datadog monitor of interest is already set up
 
 ![Fusionintegrationalert](https://raw.githubusercontent.com/sudhirpatamsetti/CitrixITM/master/images/Fusionintegrationalert.png)
 
-#### Server Configuration
+### Server Configuration
 	
 **Configure Webhook**
 		
@@ -65,7 +63,7 @@ A single Webhook looks like this:
 
 ![Webhook](https://raw.githubusercontent.com/sudhirpatamsetti/CitrixITM/master/images/Webhook.png)
 
-#### Setup in Fusion
+### Setup in Fusion
 				
 You can access Fusion Data Feeds from the left navigation pane, under Openmix. For initial steps please refer to the Fusion user guide.
 When you get to the service-specific configuration dialog box, enter the following:	
