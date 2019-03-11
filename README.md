@@ -3,7 +3,6 @@
 Connect Datadog to Citrix ITM Openmix to:
 
 * Manage traffic using the Datadog monitors to measure the health of routing endpoints
-
 * Trigger immediate traffic changes based on Datadog alerts
 
 ![DecisionReport](https://raw.githubusercontent.com/sudhirpatamsetti/CitrixITM/master/images/DecisionReport.png)
@@ -13,9 +12,10 @@ Connect Datadog to Citrix ITM Openmix to:
 
 Configuration
 
-Description:
+ The Datadog Fusion integration consists of two parts: 
 
- The Datadog Fusion integration consists of two parts: A Fusion feed to poll the Datadog monitor of interest, and a Webhook to accept Datadog alerts.
+* A Fusion feed to poll the Datadog monitor of interest, and 
+* A Webhook to accept Datadog alerts.
 
 Data Feed Format:
 
@@ -45,13 +45,10 @@ Reconciliation Steps:
 				
 Prerequisites: Datadog monitor of interest is already set up.
 					
-Go to the Datadog portal.
-					
-Go to Monitors on the left navigation panel.
-					
-Find the alert that you set up and click on it.
-					
-Check if the status is OK and if matches the status you see in Fusion.
+* Go to the Datadog portal			
+* Go to Monitors on the left navigation panel				
+* Find the alert that you set up and click on it					
+* Check if the status is OK and if matches the status you see in Fusion
 
 ![Fusionintegrationalert](https://raw.githubusercontent.com/sudhirpatamsetti/CitrixITM/master/images/Fusionintegrationalert.png)
 
@@ -60,12 +57,10 @@ Server Configuration:
 Configure Webhook
 		
 Navigate to Integrations and click on the Webhooks tile. This page (https://app.datadoghq.com/account/settings#integrations/webhooks) walks you through the Datadog Webhook integration.
-	
 At the bottom of the Webhooks dialog, Add a new Webhook.  Each row is a new Webhook that can be used to alert a different Fusion feed.  There are two required fields:
 
-Name: Can be any arbitrary name.
-	
-URL: This is the URL from the Portal Fusion Data Feed when you configured Datadog. Leave Custom Payload and Headers blank i.e. make sure the check boxes are not clicked.
+* Name: Can be any arbitrary name.	
+* URL: This is the URL from the Portal Fusion Data Feed when you configured Datadog. Leave Custom Payload and Headers blank i.e. make sure the check boxes are not clicked.
 
 A single Webhook looks like this:
 
@@ -76,15 +71,12 @@ Setup in Fusion:
 You can access Fusion Data Feeds from the left navigation pane, under Openmix. For initial steps please refer to the Fusion user guide.
 When you get to the service-specific configuration dialog box, enter the following:	
 
-Name: The name given to the data feed. This will default to "Service - Platform Name" if not specified.
+* Name: The name given to the data feed. This will default to "Service - Platform Name" if not specified.
+* Run Every: The frequency with which the data feed is updated from the service.	
+* Platform: The Platform that is associated with the data feed.
+* API Key: Available in the Datadog portal.
+* Application Key: Available in the Datadog portal.
 
-Run Every: The frequency with which the data feed is updated from the service.
-	
-Platform: The Platform that is associated with the data feed.
-
-API Key: Available in the Datadog portal.
-
-Application Key: Available in the Datadog portal.
 Note: API and Application keys are in Datadog. Both keys are required to setup a Datadog Fusion feed.  To view the keys log into Datadog and navigate to:
 								
 Integrations -> APIs https://app.datadoghq.com/account/settings#api
